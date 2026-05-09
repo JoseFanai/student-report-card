@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h6 {
+    margin-top: 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 10px;
+    color: gray;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 30px 0px 10px 300px;
+    min-height: 60px;
+}
+
+#total,
+#percentage,
+#grade {
+
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(97, 90, 90);
+    text-align: center;
+    font-size: smaller;
+}
+
+#name,
+#class,
+#roll {
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(226, 222, 222);
+    width: 100%;
+
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    width: 590px;
+    gap: 30px;
+    font-size: 12px;
+
+}
+
+#english,
+#maths,
+#science {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(216, 213, 213);
+    width: 350px;
+    font-size: 12px;
+}
+
+.subject li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.subject {
+    font-weight: bolder;
+}
+
+.header {
+    font-size: 17px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#calculate {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#calculate:hover {
+    background-color: rgb(9, 26, 82);
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+#reset {
+    background-color: rgb(207, 184, 184);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#reset:hover {
+    background-color: rgb(83, 80, 80);
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.05);
+}

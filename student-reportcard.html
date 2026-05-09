@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="container">
+        <h2>Student Report Card</h2>
+            <ul>
+              <div class="flexbox-container">
+                    <li><label for="name">Name:</label>
+                    <input type="text" id="name" name="name"></li>
+              
+                    <li><label for="class">Class:</label>
+                    <input type="text" id="class" name="class"></li>
+               
+                    <li><label for="roll">Roll Number:</label>
+                    <input type="number" id="roll" name="roll">
+              </div>
+
+            </ul>
+            <h6>Enter marks (0-100):</h6>
+            <div class="header"><header>Subjects</header>
+            <header>Marks</header></div>
+            <ul class="subject">
+                <li>
+                    <label for="english">English:</label>
+                    <input type="number" id="english" name="english">
+                </li>
+                <li>
+                    <label for="maths">Maths:</label>
+                    <input type="number" id="maths" name="maths">
+                </li>
+                <li>
+                    <label for="science">Science:</label>
+                    <input type="number" id="science" name="science">
+                </li>
+            </ul>
+            <div class="grid-container">
+                <div id="total">Total<div id="total-value"></div></div>
+                <div id="percentage">Percentage<div id="percentage-value"></div></div>
+                <div id="grade">Grade<div id="grade-value"></div></div>
+            </div>
+
+            <button onclick="checkMarks()" type="submit" id="calculate">Recalculate</button>
+            <button onclick="resetForm()" type="reset" id="reset">Reset</button>
+
+            <footer class="footer">Grade scheme: A+ (90-100), A (80-89), B (70-79), C (60-69), D (50-59), F ( < 50). Marks are validated to be between 0 and 100.</footer>
+    </form>
+
+    <script src="reportcard.js"></script>
+
+</body>
+</html>
