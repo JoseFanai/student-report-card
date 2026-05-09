@@ -19,11 +19,11 @@ function checkMarks() {
     let gradeDisplay = document.getElementById("grade-value");
 
     // 3. box a la ruak emaw number a dik loh chuan result a lang rih lo ang
-    if (isNaN(english) || isNaN(maths) || isNaN(science) || 
-        english < 0 || english > 100 || 
-        maths < 0 || maths > 100 || 
+    if (isNaN(english) || isNaN(maths) || isNaN(science) ||
+        english < 0 || english > 100 ||
+        maths < 0 || maths > 100 ||
         science < 0 || science > 100) {
-        
+
         totalDisplay.innerHTML = "";
         percentDisplay.innerHTML = "";
         gradeDisplay.innerHTML = "";
@@ -33,7 +33,7 @@ function checkMarks() {
     // 4. Box pathumah number dik tak a awm kim vek hunah a calculate chiah ang
     let total = english + maths + science;
     let percentage = (total / 300) * 100;
-    
+
     let grade;
     if (percentage >= 90) {
         grade = "A+";
